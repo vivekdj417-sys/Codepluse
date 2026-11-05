@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodePulse sync</title>
+    <style>
+      body { width: 340px; margin: 0; padding: 18px; color: #f7f3fb; background: #17121f; font: 14px Arial, sans-serif; }
+      h1 { margin: 0 0 8px; font-size: 19px; }
+      p { color: #cbbfda; line-height: 1.5; }
+      label { display: block; margin: 14px 0; color: #e9e1f1; font-size: 12px; }
+      input, textarea { box-sizing: border-box; display: block; width: 100%; margin-top: 6px; padding: 9px; color: #fff; background: #2a2234; border: 1px solid #51445f; border-radius: 6px; }
+      textarea { min-height: 70px; resize: vertical; }
+      button { width: 100%; padding: 11px; color: #fff; background: #8a62c7; border: 0; border-radius: 7px; font-weight: 700; cursor: pointer; }
+      button:disabled { opacity: 0.6; cursor: wait; }
+      #status { overflow-wrap: anywhere; font-size: 12px; }
+      #status.error { color: #ff9a9a; }
+      #status.success { color: #a7edc1; }
+    </style>
+  </head>
+  <body>
+    <h1>CodePulse LeetCode Sync</h1>
+    <p>Sync your full solved list now and automatically every 2 days.</p>
+    <label>CodePulse API URL <input id="api" value="http://localhost:4000/api"></label>
+    <label>CodePulse JWT <textarea id="token" placeholder="Paste your CodePulse token"></textarea></label>
+    <button id="sync">Save and sync now</button>
+    <p id="status"></p>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

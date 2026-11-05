@@ -1,0 +1,56 @@
+.logout {
+  border: 0;
+  background: none;
+  color: #9ea6ad;
+  font: 12px "DM Sans";
+  margin: 20px 12px;
+  cursor: pointer;
+}
+.verified-note {
+  margin-top: 25px;
+  color: #c8ced5;
+  font-size: 12px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+}
+.stat-card {
+  background: #202437 !important;
+  border: 1px solid #3b4355;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.08), 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+.stats-grid .stat-card:nth-child(1) {
+  background: linear-gradient(145deg, #22364a, #1c2739) !important;
+  border-color: #326784;
+}
+.stats-grid .stat-card:nth-child(2) {
+  background: linear-gradient(145deg, #243a35, #1f2c2d) !important;
+  border-color: #38756d;
+}
+.stats-grid .stat-card:nth-child(3) {
+  background: linear-gradient(145deg, #3a3225, #2a241d) !important;
+  border-color: #856d39;
+}
+.stats-grid .stat-card:nth-child(4) {
+  background: linear-gradient(145deg, #3a2533, #2b2028) !important;
+  border-color: #82465f;
+}
+.stat-card .eyebrow {
+  color: #b9c5d3;
+}
+.stat-card strong {
+  display: block;
+  color: #ffffff;
+  font: 600 32px "Space Grotesk";
+  margin-top: 14px;
+}
+@media (max-width: 800px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
